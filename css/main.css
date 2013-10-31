@@ -1,0 +1,170 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #274C65;
+}
+
+h1 {
+    color: #0A273C;
+}
+
+.sliderContainer {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	overflow: hidden;
+    display: none;
+    z-index: 900;
+    transition: margin 1s, top 1s;
+}
+
+.sliderContainer.selected {
+    display: block;
+}
+
+.slide {
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	width: 900px;
+	height: 700px;
+	left: 50%;
+	top: 50%;
+	margin-top: -350px;
+	background-color: #EEE;
+    border: 1px solid #000000;
+    padding: 20px;
+    font-size: 20px;
+
+    transition: margin 1s, top 1s;
+
+}
+
+.slide.current {
+	visibility: visible;
+	display: block;
+	margin-left: -450px;
+}
+
+.slide.current.slideView {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1100;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.slide.next {
+	visibility: visible;
+	display: block;
+	margin-left: 500px;
+    opacity: 0.7;
+}
+
+.slide.prev {
+	visibility: visible;
+	display: block;
+	margin-left: -1400px;
+    opacity: 0.7;
+}
+
+
+.sliderContainer.multiple {
+	height: 50%;
+    opacity: 0.5;    
+}
+
+.sliderContainer.multiple.next {
+    display: block;
+    top: 50%;
+}
+
+.sliderContainer.multiple .slide {
+	height: 350px;
+	top: 0;
+	margin-top: 0;
+}
+
+.sliderContainer.multiple.selected {
+    opacity: 1;
+}
+
+.sliderContainer .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+    font-size: 16px;
+}
+
+.slicedImages img {
+    float: left;
+}
+
+.sliderContainer .slide .nextStep {
+    display: none;
+}
+
+
+.options {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200px;
+    z-index: 1000;
+    text-align: center;
+    margin-left: -100px;
+    padding: 10px 0;
+    background: #999;
+    border: 1px solid #333;
+
+    opacity: 0.3;
+}
+
+.options:hover {
+    opacity: 1;
+}
+
+.options .item {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.options .item.icon {
+    border: 1px solid #999;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.options .item.icon div {
+    background-image: url(../img/ui-icons_cccccc_256x240.png);
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+
+.options .item.icon .fillView {
+    background-position: -16px -80px;
+}
+
+.options .item.icon .prevSlide {
+    background-position: -96px -48px;
+}
+
+.options .item.icon .nextSlide {
+    background-position: -32px -48px;
+}
+
+.options .item.icon .splitView {
+    background-position: -128px -16px;
+}
+

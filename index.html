@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link href="css/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/presintation.js"></script>
+
+</head>
+    <body>
+        <div class='sliderContainer selected'>
+            <div class='slide'>
+                <h1>Навигация</h1>
+                    
+                <p>
+                    Срелка влево и стрелка в право помогут переключатся между слайдами
+                </p>
+            </div>
+
+            <div class='slide'>
+                <h1>Выбор презинтации</h1>
+                <p>
+                    Срелка вверх и стрелка вниз помогут переключатся между презинтациями
+                </p>
+            </div>
+            <div class='slide'>
+                <h1>Переход в макро режим</h1>
+                <p>
+                    Клавиша пробел, позволит перейти в макро режим и обратно.
+                </p>
+                <p>
+                    В этом режиме, слайд разворачивается на весь экран.
+                </p>
+            </div>
+            <div class='slide'>
+                <h1>Возможность показывать контент по частям</h1>
+                
+                <p>
+                    Добавляем к элементу слайда класс "nextStep" и при попытке переключить страницу, этот элемент будет показан.
+                </p>
+                
+                <div class="slicedImages">
+                    <img src="img/presentations/first.png" alt="" class="nextStep" />
+                    <img src="img/presentations/second.png" alt="" class="nextStep" />
+                    <img src="img/presentations/third.png" alt="" class="nextStep" />
+                </div>
+            </div>
+        </div>
+    
+        <div class='sliderContainer'>
+            <div class='slide'>
+                <h1>Вторая презентация</h1>
+                <ul>
+                    <li>Слайд первый</li>
+                    <li class="nextStep">Дополнительная информация</li>
+                    <li class="nextStep">Заключающий пункт</li>
+                </ul>
+            </div>
+            <div class='slide'>
+                <h1>Вторая презентация</h1>
+                <p>
+                    Слайд Второй
+                </p>
+
+            </div>
+            <div class='slide'>
+                <h1>Вторая презентация</h1>
+                <p>
+                    Слайд третий
+                </p>
+
+            </div>
+            <div class='slide'>
+                 <h1>Вторая презентация</h1>
+                <p>
+                    Четвертый
+                </p>
+            </div>
+        </div>
+        
+        <div class='sliderContainer'>
+            <div class='slide'>
+                <h1>Третья презентация</h1>
+                <ul>
+                    <li>Слайд первый</li>
+                    <li class="nextStep">Дополнительная информация</li>
+                    <li class="nextStep">Заключающий пункт</li>
+                </ul>
+            </div>
+            <div class='slide'>
+                <h1>Вторая презентация</h1>
+                <p>
+                    Слайд Второй
+                </p>
+
+            </div>
+            <div class='slide'>
+                <h1>Вторая презентация</h1>
+                <p>
+                    Слайд третий
+                </p>
+
+            </div>
+            <div class='slide'>
+                 <h1>Вторая презентация</h1>
+                <p>
+                    Четвертый
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="options">
+            <div class="item icon prevSildeBtn" title="Previous Slide">
+                <div class="prevSlide"></div>
+            </div>
+            
+            <div class="item icon fullViewBtn " title="Full View">
+                <div class="fillView"></div>
+            </div>
+            
+            <div class="item icon nextSlideBtn" title="Next Slide">
+                <div class="nextSlide"></div>
+            </div>
+
+            <div class="item icon toggleMultipleView" title="Multiple presentations">
+                <div class="splitView"></div>
+            </div>
+            
+
+        </div>
+
+    </body>
+</html>
